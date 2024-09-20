@@ -9,6 +9,7 @@ export default {
       colors: {
         'dark-gray': "hsl(0, 0%, 55%)",
         'very-dark-gray': "hsl(0, 0%, 41%)",
+        'tint': "rgba(0, 0, 0, .4)",
       },
       backgroundImage: {
         'hero-mobile': "url('/src/assets/images/mobile/image-hero.jpg')",
@@ -18,6 +19,9 @@ export default {
         'font-josefin': "Josefin Sans",
         'font-alata': "Alata",
       },
+      screens: {
+        'xs': "550px"
+      }
     },
   },
   plugins: [],

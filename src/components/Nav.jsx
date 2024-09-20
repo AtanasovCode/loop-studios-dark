@@ -15,8 +15,8 @@ const Nav = () => {
     }
 
     return (
-        <div className="w-full flex items-center justify-between p-6 z-10 overflow-x-hidden">
-            <div className="flex items-center justify-center w-[45%]">
+        <div className="w-full flex items-center justify-between z-10 overflow-x-hidden md:pt-[5%]">
+            <div className="flex items-center justify-center w-[45%] xs:w-[30%] sm:w-[25%] md:w-[25%] lg:w-[20%]">
                 <img
                     src={logo}
                     alt="loop studios logo"
@@ -24,7 +24,7 @@ const Nav = () => {
                 />
             </div>
             <div
-                className="flex items-center justify-center w-6 cursor-pointer"
+                className="flex items-center justify-center w-6 cursor-pointer md:hidden"
                 onClick={() => toggleNav()}
             >
                 <img
@@ -34,13 +34,15 @@ const Nav = () => {
                 />
             </div>
             <div className={`
-                w-[100%] h-[100vh] flex flex-col items-start justify-start p-6 bg-black
+                w-[100%] h-[100vh]  xs:w-[65%] sm:w-[50%]
+                flex flex-col items-start justify-start p-6 bg-black  
                 fixed top-0 right-0
                 transition ease-in-out duration-400 z-50
-                ${showNav ? "translate-x-0" : "translate-x-full"}
+                md:relative md:h-auto md:flex-row  md:items-center md:justify-center  md:bg-transparent md:w-auto
+                ${showNav ? "translate-x-0" : "translate-x-full"} md:translate-x-0
             `}>
 
-                <div className="w-full flex items-center justify-between mb-32">
+                <div className="w-full flex items-center justify-between mb-32 md:hidden">
                     <div className="flex items-center justify-center w-[45%]">
                         <img
                             src={logo}
@@ -59,7 +61,7 @@ const Nav = () => {
                         />
                     </div>
                 </div>
-                <div className="w-full flex flex-col items-start justify-center">
+                <div className="w-full flex flex-col items-start justify-center md:flex-row md:items-center md:justify-cente">
                     <NavLink text="About" />
                     <NavLink text="Careers" />
                     <NavLink text="Events" />
