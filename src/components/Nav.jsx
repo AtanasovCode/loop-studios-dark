@@ -15,8 +15,8 @@ const Nav = () => {
     }
 
     return (
-        <div className="w-full flex items-center justify-between z-10 overflow-x-hidden md:pt-[5%]">
-            <div className="flex items-center justify-center w-[45%] xs:w-[30%] sm:w-[25%] md:w-[25%] lg:w-[20%]">
+        <div className="w-full flex items-center justify-between z-10 overflow-x-hidden md:pt-[4%]">
+            <div className="flex items-center justify-center w-[45%] xs:w-[30%] sm:w-[25%] md:w-[25%] lg:w-[18%]">
                 <img
                     src={logo}
                     alt="loop studios logo"
