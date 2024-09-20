@@ -15,7 +15,7 @@ const Nav = () => {
     }
 
     return (
-        <div className="w-full flex items-center justify-between p-6 z-10">
+        <div className="w-full flex items-center justify-between p-6 z-10 overflow-x-hidden">
             <div className="flex items-center justify-center w-[45%]">
                 <img
                     src={logo}
@@ -34,10 +34,12 @@ const Nav = () => {
                 />
             </div>
             <div className={`
-                w-[100%] h-[100vh] flex flex-col items-start justify-start p-6 bg-black absolute top-0 right-0
+                w-[100%] h-[100vh] flex flex-col items-start justify-start p-6 bg-black
+                fixed top-0 right-0
                 transition ease-in-out duration-400 z-50
-                ${showNav ? "translate-x-0" : "translate-x-[100%]"}
+                ${showNav ? "translate-x-0" : "translate-x-full"}
             `}>
+
                 <div className="w-full flex items-center justify-between mb-32">
                     <div className="flex items-center justify-center w-[45%]">
                         <img
@@ -46,11 +48,11 @@ const Nav = () => {
                             className="w-full"
                         />
                     </div>
-                    <div 
+                    <div
                         className="flex items-center justify-center w-5 cursor-pointer"
                         onClick={() => toggleNav()}
                     >
-                        <img 
+                        <img
                             src={closeIcon}
                             alt="icon for closing the mobile navigation"
                             className="w-full"
