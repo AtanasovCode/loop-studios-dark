@@ -1,6 +1,7 @@
 import Hero from "./sections/Hero";
 import Info from "./sections/Info";
 import PhotoGrid from "./sections/PhotoGrid";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Info />
         <PhotoGrid />
       </div>
+      <Footer />
     </div>
   );
 }
