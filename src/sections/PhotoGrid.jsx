@@ -47,7 +47,7 @@ const photos = [
 const PhotoGrid = () => {
     return (
         <div className="w-full flex flex-col items-center justify-center text-black mt-24 lg:mt-48">
-            <div className="w-full text-left font-light text-[2.5rem] mb-16 uppercase md:text-center lg:text-left lg:w-[100%]">
+            <div className="w-full text-left font-light text-[2.5rem] mb-16 uppercase md:text-center lg:text-left lg:w-[100%] lg:text-5xl">
                 Our Creations
             </div>
             <div className="w-full grid grid-cols-1 lg:grid-cols-4 lg:w-[100%] gap-8">
