@@ -7,10 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'background': "#02223C",
+        'background': "#ffffff",
         'dark-gray': "hsl(0, 0%, 55%)",
         'very-dark-gray': "hsl(0, 0%, 41%)",
         'tint': "rgba(0, 0, 0, .4)",
+        'tint-light': "rgba(0, 0, 0, .2)",
       },
       backgroundImage: {
         'hero-mobile': "url('/src/assets/images/mobile/image-hero.jpg')",

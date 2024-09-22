@@ -46,11 +46,11 @@ const photos = [
 
 const PhotoGrid = () => {
     return (
-        <div className="w-full flex flex-col items-center justify-center text-white my-20">
-            <div className="w-full text-left font-light text-[2.5rem] mb-16 uppercase md:text-center">
+        <div className="w-full flex flex-col items-center justify-center text-black mb-20 mt-48">
+            <div className="w-full text-left font-light text-[2.5rem] mb-16 uppercase md:text-center lg:text-left lg:w-[100%]">
                 Our Creations
             </div>
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:w-[75%] lg:w-[80%] gap-8">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:w-[75%] lg:w-[100%] gap-8">
                 {photos.map((photo, index) => (
                     <PhotoItem
                         key={index}

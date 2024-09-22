@@ -1,7 +1,7 @@
 
 const Info = () => {
     return (
-        <div className="flex flex-col items-center justify-center mt-28 text-white lg:flex-row lg:items-stretch">
+        <div className="flex flex-col items-center justify-center mt-28 text-black lg:flex-row lg:items-stretch">
             <div className="bg-vr-mobile bg-cover bg-center bg-no-repeat w-[100%] mb-8 rounded-md aspect-square lg:flex-1 lg:mb-0 lg:w-auto lg:bg-vr-desktop">
                 {/* Image */}
             </div>
