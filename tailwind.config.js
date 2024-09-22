@@ -12,6 +12,7 @@ export default {
         'very-dark-gray': "hsl(0, 0%, 41%)",
         'tint': "rgba(0, 0, 0, .4)",
         'tint-light': "rgba(0, 0, 0, .2)",
+        'hover-white': "rgba(255, 255, 255, .6)",
       },
       backgroundImage: {
         'hero-mobile': "url('/src/assets/images/mobile/image-hero.jpg')",
