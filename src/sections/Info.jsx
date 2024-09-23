@@ -1,12 +1,23 @@
 
 const Info = () => {
     return (
-        <div className="flex flex-col items-center justify-center mt-28 text-black lg:flex-row lg:items-stretch">
-            <div className="bg-vr-mobile bg-cover bg-center bg-no-repeat w-[100%] mb-8 rounded-md aspect-square lg:flex-1 lg:mb-0 lg:w-auto lg:bg-vr-desktop">
-                {/* Image */}
+        <div className="
+            flex flex-col items-center justify-center mt-32 relative
+            lg:w-full lg:flex-row lg:justify-start
+        ">
+            <div className={`
+                w-full h-[40dvh] bg-center bg-no-repeat bg-cover
+                bg-vr-mobile md:bg-vr-desktop mb-24 lg:mb-0
+                lg:w-[80%] lg:h-auto lg:aspect-[16/9] lg:bg-contain lg:bg-left
+            `}>
+                {/* Image Container */}
             </div>
-            <div className="flex flex-col items-center justify-center lg:flex-1 lg:bg-background lg:justify-start lg:p-24 lg:translate-y-[35%] lg:rounded-md lg:-translate-x-[8%]">
-                <div className="text-[2.5rem] leading-[44px] font-light uppercase mb-4 text-center lg:text-6xl">
+            <div className={`
+                flex flex-col items-center justify-center mt-10 lg:mt-0
+                lg:absolute lg:bg-background lg:w-[60%] lg:top-[40%] lg:-right-[10%]
+                lg:p-20 lg:rounded-md
+            `}>
+                <div className="text-[2.5rem] leading-[44px] font-light uppercase mb-4 text-center lg:text-4xl xl:text-6xl">
                     The leader in interactive VR
                 </div>
                 <div className="text-center">
