@@ -4,7 +4,7 @@ const NavLink = ({
     text,
 }) => {
 
-    const hoverState = `
+   const hoverState = `
         hover:before:content-[''] 
         hover:before:absolute hover:before:-bottom-4 hover:before:left-[50%] hover:before:-translate-x-[50%]
         hover:before:w-[70%] hover:before:h-[.1rem] hover:before:bg-white before:transition-all hover:duration-400
