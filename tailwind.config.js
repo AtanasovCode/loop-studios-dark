@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'background': "#ffffff",
+        'background': "#fff",
+        'text': "#111",
         'dark-gray': "hsl(0, 0%, 55%)",
         'very-dark-gray': "hsl(0, 0%, 41%)",
         'tint': "rgba(0, 0, 0, .4)",

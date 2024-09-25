@@ -46,9 +46,18 @@ const photos = [
 
 const PhotoGrid = () => {
     return (
-        <div className="w-full flex flex-col items-center justify-center text-black mt-24 lg:mt-48">
-            <div className="w-full text-left font-light text-[2.5rem] mb-16 uppercase md:text-center lg:text-left lg:w-[100%] lg:text-5xl">
-                Our Creations
+        <div className="w-full flex flex-col items-center justify-center text-text mt-24 lg:mt-48 relative mb-10 lg:mb-0">
+            <div className="flex items-center justify-between w-full mb-20">
+                <div className="w-full text-left font-light text-[2.5rem] uppercase md:text-center lg:text-left lg:text-5xl">
+                    Our Creations
+                </div>
+                <div className="absolute -bottom-[5%] left-[50%] -translate-x-[50%] flex items-center justify-center lg:relative lg:translate-x-0 lg:left-auto">
+                    <input 
+                        type="button"
+                        value="See All"
+                        className="px-8 py-2 text-center border-2 border-solid border-black tracking-[.2rem] bg-transparent text-md uppercase font-semibold"
+                    />
+                </div>
             </div>
             <div className="w-full grid grid-cols-1 lg:grid-cols-4 lg:w-[100%] gap-8">
                 {photos.map((photo, index) => (

@@ -3,7 +3,7 @@ const Info = () => {
     return (
         <div className="
             flex flex-col items-center justify-center mt-32 relative
-            lg:w-full lg:flex-row lg:justify-start
+            lg:w-full lg:flex-row lg:justify-start text-text
         ">
             <div className={`
                 w-full h-[40dvh] bg-center bg-no-repeat bg-cover
